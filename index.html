@@ -1,60 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAA</title>
+    <meta charset="utf-8">
+    <title>BBB英会話スクール</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
+
 <body>
-    <!-- ヘッダー -->
     <header id="header">
-        <h1 class="icon">
-            <a href="#"><img src="images/logo-r.svg" alt="AAA英会話スクール"></a>
+        <h1 class="site-title">
+        <a href="#"><img src="images/logo-r.svg" alt="BBB英会話スクール"></a>
         </h1>
-            <nav id="navi" class="active">
-                <img class="logo" src="images/logo-w.svg" alt="AAA英会話スクール">
-                <ul class="menu">
-                    <li><a href="#">AAAが選ばれる理由</a></li>
-                    <li><a href="#">受講生の声</a></li>
-                    <li><a href="#">スクールの概要</a></li>
-                </ul>
-                <a class="btn" href="#">無料体験に申し込む
-                </a>
-            </nav>
-        <div class="hamburger active">
+
+        <nav id="navi" class="">
+            <img class="logo" src="images/logo-w.svg" alt="BBB英会話スクール">
+            <ul class="menu">
+                <li><a href="#reason">BBBが選ばれる理由</a></li>
+                <li><a href="#voice">受講生の声</a></li>
+                <li><a href="#summary">スクールの概要</a></li>
+            </ul>
+            <a class="btn" href="#">無料体験に申し込む</a>
+        </nav>
+
+        <div class="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </header>
+
     <main>
-        <!-- メイン -->
-        <div id="mainVisual">
+        <!-- メインビジュアル -->
+        <div id="mainvisual">
             <div class="text">
-                <p class="title">話して学ぼう！<br>AAA英会話スクール</p>
+                <p class="title">話して学ぼう！<br>BBB英会話スクール</p>
                 <a class="btn" href="#">無料体験はこちら</a>
             </div>
-            <ul class="keyVisual">
-                <li><img src="images/mainvisual1.jpg" alt="main1"></li>
-                <li><img src="images/mainvisual2.jpg" alt="main2"></li>
-                <li><img src="images/mainvisual3.jpg" alt="main3"></li>
+            <ul class="fade">
+                <li><img src="images/mainvisual1.jpg" alt=""></li>
+                <li><img src="images/mainvisual2.jpg" alt=""></li>
+                <li><img src="images/mainvisual3.jpg" alt=""></li>
             </ul>
         </div>
-        <!-- AAAが選ばれる理由 -->
-        <section id="resons">
-            <h2 class="section_title">AAAが選ばれる理由</h2>
-            <div class="resons_content">
-                <div class="slide content-slide_left slide_left">
-                    <img src="images/icon-pc.png" alt="pc">
+
+        <!-- BBBが選ばれる理由 -->
+        <section id="reason">
+            <h2 class="section-title">BBBが選ばれる理由</h2>
+
+            <div class="bg">
+                <div class="slide inview-slide-left slide-left">
+                    <img src="images/icon-pc.png" alt="">
                     <p>
                         <span class="title">オンライン対応</span>
                         <span class="text">24時間いつでも受講できる！</span>
                     </p>
                 </div>
-                <div class="slide content-slide_right slide_right">
-                    <img src="images/icon-teacher.png" alt="teacher">
+                <div class="slide inview-slide-right slide-right">
+                    <img src="images/icon-teacher.png" alt="">
                     <p>
                         <span class="title">講師はネイティブ</span>
                         <span class="text">お気に入りの講師が自由に選べる！</span>

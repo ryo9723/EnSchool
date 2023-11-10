@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    color: #333;
+    font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    letter-spacing: 0.1em;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+li {
+    list-style: none;
+}
+
+/* ヘッダー */
+#header {
+    width: 100px;
+    padding: 40px 0 0 50px;
+}
+#header .icon {
+    width: 100px;
+    line-height: 1px;
+}
+#header .icon a {
+    display: block;
+}
+
+/* ---------------------
+    ハンバーガーメニュー
+------------------------*/
+.hamburger {
+    width: 100px;
+    height: 100px;
+    background-color: #ff2a2a;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hamburger:hover {
+    opacity: 0.7;
+}
+/* Closeハンバーガーメニュー */
+.hamburger span {
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 25px;
+    transition: 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+    top: 36px;
+}
+.hamburger span:nth-child(2) {
+    top: 50px;
+}
+.hamburger span:nth-child(3) {
+    top: 64px;
+}
+/* Openハンバーガーメニュー */
+.hamburger.active span:nth-child(1) {
+    top: 47px;
+    left: 25px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+}
+.hamburger.hamburger.active span:nth-child(2),
+.hamburger.hamburger.active span:nth-child(3) {
+    top: 47px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+/* ---------------
+    ナビゲーション
+-----------------*/
+
+/* close */
+#navi {
+    width: 100%;
+    height: 100vh;
+    background-color: #ff2a2a;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    visibility: hidden;
+}
+/* Open */
+#navi .active {
+    opacity: 1;
+    visibility: visible;
+}
+#navi .logo {
+    width: 100px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+#navi .menu {
+    margin: 80px 0 40px 0;
+}
+#navi .menu li {
+    margin-bottom: 20px;
+}
+#navi .menu a {
+    color: #fff;
+    font-weight: bold;
+}
+#navi .btn {
+    width: 250px;
+    color: #fff;
+    border: 1px solid #fff;
+    display: block;
+    font-weight: bold;
+    padding: 15px 0;
+    margin: auto;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+#navi .btn:after {
+    content: "";
+    width: 250px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 15px 0;
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+}
+#navi .btn:hover {
+    background-color: #fff;
+    color: #ff2a2a;
+}

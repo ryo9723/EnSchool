@@ -567,6 +567,9 @@ footer
     justify-content: space-between;
     margin-bottom: 60px;
 }
+#footer .inner li {
+    padding: 5px 0;
+}
 #footer .title {
     font-weight: bold;
     margin-bottom: 8px;
@@ -766,11 +769,12 @@ SP
     #entry .title {
         font-size: 1.5rem;
     }
-    #entry .catchphrase {
+    #entry .sub {
         font-size: 1rem;
     }
     #entry .btn {
         font-size: 1.5rem;
+        padding: 20px 120px;
     }
 /*-------------------------------------------
     フッター

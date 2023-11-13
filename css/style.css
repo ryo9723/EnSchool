@@ -436,17 +436,27 @@ voice
 #voice .item-left .balloon-text {
     margin-left: 4%;
 }
-#voice .item-right .balloon-text {
-    margin-right: 4%;
-}
-#voice .balloon-text::before {
+#voice .item-left .balloon-text::before {
     content: "";
     position: absolute;
     top: 60%;
     left: 0;
     margin-left: -30px;
     border: 15px solid transparent;
-    border-right: 1px solid #e9f1fb;
+    border-right: 15px solid #e9f1fb;
+}
+
+#voice .item-right .balloon-text {
+    margin-right: 4%;
+}
+#voice .item-right .balloon-text::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0;
+    margin-right: -30px;
+    border: 15px solid transparent;
+    border-left: 15px solid #e9f1fb;
 }
 
 

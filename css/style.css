@@ -405,16 +405,48 @@ voice
     /* opacity: 0; */
     margin-bottom: 60px;
 }
-
+#voice .item-left {
+    justify-content: flex-start;
+}
+#voice .item-right {
+    justify-content: flex-end;
+}
 #voice .student {
     width: 14%;
 }
-
 #voice .student img {
     width: 100%;
     background-color: #ccc;
     border-radius: 50%;
     margin-bottom: 10px;
+}
+#voice .name {
+    font-size: .75rem;
+    text-align: center;
+}
+#voice .balloon-text {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: #e9f1fb;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+#voice .item-left .balloon-text {
+    margin-left: 4%;
+}
+#voice .item-right .balloon-text {
+    margin-right: 4%;
+}
+#voice .balloon-text::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    margin-left: -30px;
+    border: 15px solid transparent;
+    border-right: 1px solid #e9f1fb;
 }
 
 
